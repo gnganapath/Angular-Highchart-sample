@@ -1,0 +1,128 @@
+<!doctype html>
+<html ng-app="dashboard">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Highchart Dashboard Application</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+    <script src="lib/Angular/angular.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.11.2.min.js" type="text/javascript"></script>
+    <script src="js/maincontroller.js" type="text/javascript"></script>
+</head>
+
+<body ng-controller="MainController">
+    <div class="col-md-12">
+
+        <header role="banner" id="top" class="navbar navbar-static-top bs-docs-nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <b class="title">Dashboard </b><br>
+                </div>
+
+                <div class="pull-right">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="tasks-menu">{{address.name}} </li>
+                        <li class="tasks-menu">Name:</li>
+                        <li class="tasks-menu">Name:</li>
+                        <li class="tasks-menu">Name:</li>
+                        <li class="tasks-menu">Name:</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </header>
+
+        <div class="col-md-12 breadcrumb-row">
+            <div class="pull-right">
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li class="active">Accessories</li>
+                </ul>
+            </div>
+        </div>
+        {{userdetail.created}}
+
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <aside class="main-sidebar">
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+
+                        <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                        <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+                        <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+                        <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+                        <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+                        <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+                        <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+                        <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+                        <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- /.sidebar -->
+            <div class="border col-sm-9">
+                <div class="border col-sm-6 Configuration">
+
+
+                    Configuration:
+                    <div class="border row">
+                        <div class="border col-md-6">
+                            <ul>
+                                <li ng-repeat="x in names">{{ x.Name }}</li>
+                            </ul>
+                        </div>
+                        <div class="border col-md-6" ng-repeat="x in names">{{ x.Country }}</div>
+
+
+                    </div>
+                </div>
+                <div class="border col-sm-6 Temrature">
+                    Temrature:
+                    <div class="border row">
+                        <div class="border col-md-6">
+                            <ul>
+                                <li ng-repeat="x in names">{{ x.Name }}</li>
+                            </ul>
+                        </div>
+                        <div class="border col-md-6" ng-repeat="x in names">{{ x.Country }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border col-sm-9">
+                <div class="border col-sm-6 Configuration">
+
+
+                    storage:
+                    <div class="border row">
+                        <div class="border col-md-6">
+                            <hc-chart options="chartOptions">Placeholder for generic chart</hc-chart>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="border col-sm-6 Temrature">
+                    Sales:
+                    <div class="border row">
+                        <div class="border col-md-6">
+                            <ul>
+                                <li ng-repeat="x in names">{{ x.Name }}</li>
+                            </ul>
+                        </div>
+                        <div class="border col-md-6" ng-repeat="x in names">{{ x.Country }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
