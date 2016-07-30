@@ -1,0 +1,66 @@
+
+    [
+            {
+                "id": 1,
+                "name": "Black Sunglasses",
+                "category": "Men Accessories",
+                "price": 20,
+                "image": "men/Allen-Solly-Aviator-Black-Sunglasses.jpeg"
+            }, 
+            {
+                "id": 2,
+                "name": "Risk red puma",
+                "category": "Men Accessories",
+                "price": 30,
+                "image": "men/black-silver-high-risk-red-puma.jpeg"
+            }, 
+            {
+                "id": 3,
+                "name": "Shoulder bag",
+                "category": "Women Accessories",
+                "price": 5,
+                "image": "Women/hidesign-shoulder-bag-norah.jpeg"
+            }, 
+            {
+                "id": 4,
+                "name": "Fashion drop earring",
+                "category": "Women Accessories",
+                "price": 20,
+                "image": "Women/vendee-fashion-drop-earring.jpeg"
+            }, 
+            {
+                "id": 5,
+                "name": "Pampers",
+                "category": "Children Accessories",
+                "price": 20,
+                "image": "Children/pampers-active-baby-diaper.jpeg"
+            }, 
+            {
+                "id": 6,
+                "name": "Baby steps roller",
+                "category": "Children Accessories",
+                "price": 10,
+                "image": "Children/bestway-baby-steps-roller.jpeg"
+            }, 
+            {
+                "id": 7,
+                "name": "Cricker Bat",
+                "category": "Sports Accessories",
+                "price": 20,
+                "image": "Sports/puma-karbon-gtr-bat.jpeg"
+            }, 
+            {
+                "id": 8,
+                "name": "Puma Shoe",
+                "category": "Sports Accessories",
+                "price": 15,
+                "image": "Sports/navy-blue-zinnia-puma-2.jpeg"
+            }, 
+            {
+                "id": 9,
+                "name": "Baby girls dress",
+                "category": "Children Accessories",
+                "price": 7,
+                "image": "Children/cool-quotient-bab-girls-gathered-dress.jpeg"
+            }
+        ]
